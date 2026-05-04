@@ -54,7 +54,7 @@ def cla(
     beta: float = 1.0,
 ):
     """
-    Causal Latent Analysis (CLA).
+    Contrastive Liquid Association (CLA).
 
     Computes a matrix T whose leading eigenvectors capture the directions in
     feature space along which treated groups differ from control, weighted by
