@@ -6,7 +6,7 @@ Contrastive Liquid Association (CLA) is a dimension reduction (DR) method for hi
 
 ```
 .
-├── data/               # Preprocessed datasets for each application
+├── data/               # Preprocessed datasets for T4D7_BC and Senescent experiments
 ├── main.py             # Core CLA implementation
 ├── simulations.py      # Simulation studies
 ├── T47D_BC.ipynb       # Application: T47D breast cancer cells
