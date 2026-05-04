@@ -1,6 +1,6 @@
 # CLA — Contrastive Liquid Association
 
-Contrastive Liquid Association (CLA) is a dimension reduction method for high-dimensional datasets with **multiple or continuous treatments**. Unlike standard contrastive PCA, which is limited to binary case-control comparison, CLA identifies the latent direction of variation that changes systematically with treatment intensity.
+Contrastive Liquid Association (CLA) is a dimension reduction (DR) method for high-dimensional datasets with **multiple or continuous treatments**. Unlike standard contrastive DR, which is limited to binary case-control comparison, CLA identifies the latent direction of variation that changes systematically with treatment intensity relative to the control group. 
 
 ## Repository Structure
 
