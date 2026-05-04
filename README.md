@@ -1,20 +1,23 @@
 # CLA — Contrastive Liquid Association
 
-Contrastive Liquid Association (CLA) is a dimension reduction method for high-dimensional datasets with **multiple or continuous treatments**. Unlike standard contrastive PCA, which is limited to binary case-control comparison, CLA identifies the latent direction of variation that changes systematically with treatment intensity — avoiding the bias toward large-sample or high-variance groups that plagues pooled approaches.
+Contrastive Liquid Association (CLA) is a dimension reduction method for high-dimensional datasets with **multiple or continuous treatments**. Unlike standard contrastive PCA, which is limited to binary case-control comparison, CLA identifies the latent direction of variation that changes systematically with treatment intensity.
 
 ## Repository Structure
 
+```
 .
-├── data/                  # Preprocessed datasets for each application
-├── main.py                # Core CLA implementation
-├── simulations.py         # Simulation studies
-├── T47D_BC.ipynb          # Application: T47D breast cancer cells
-├── LPS_Nutlin.ipynb       # Application: Liposarcoma cells (Nutlin-3a)
-├── LPS_Abema.ipynb        # Application: Liposarcoma cells (Abemaciclib)
-└── Senescent.ipynb        # Application: Human epithelial senescence time-course
+├── data/               # Preprocessed datasets for each application
+├── main.py             # Core CLA implementation
+├── simulations.py      # Simulation studies
+├── T47D_BC.ipynb       # Application: T47D breast cancer cells
+├── LPS_Nutlin.ipynb    # Application: Liposarcoma cells (Nutlin-3a)
+├── LPS_Abema.ipynb     # Application: Liposarcoma cells (Abemaciclib)
+└── Senescent.ipynb     # Application: Human epithelial senescence time-course
+```
 
 ## Quickstart
 
+```python
 import numpy as np
 from main import cla, plot_cla_eigenvectors
 
@@ -23,7 +26,10 @@ from main import cla, plot_cla_eigenvectors
 T, evals, evecs = cla(X, Z, center=True)
 
 plot_cla_eigenvectors(evecs, feature_names, n_components=2)
+```
 
 ## Requirements
 
+```
 pip install numpy scipy matplotlib anndata scanpy
+```
